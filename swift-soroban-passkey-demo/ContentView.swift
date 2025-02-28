@@ -6,17 +6,32 @@
 //
 
 import SwiftUI
+import SwiftPasskeyKit
 
 struct ContentView: View {
+    
+    @State private var user:User? = nil
+    private var passkeyKit:PasskeyKit?
+    
     var body: some View {
         VStack {
-            Image(systemName: "globe")
-                .imageScale(.large)
-                .foregroundStyle(.tint)
-            Text("Hello, world!")
+            if let user = user {
+                WalletView(user: user, logoutUser: logoutUser)
+            } else {
+                AuthView(userLoggedIn: userLoggedIn(_:))
+            }
         }
         .padding()
     }
+    
+    public func userLoggedIn(_ user:User) -> Void {
+        self.user = user
+    }
+    
+    public func logoutUser() -> Void {
+        self.user = nil
+    }
+    
 }
 
 #Preview {

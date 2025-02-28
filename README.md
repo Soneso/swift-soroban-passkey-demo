@@ -6,7 +6,7 @@ A demo app using the [SwiftPasskeyKit](https://github.com/Soneso/SwiftPasskeyKit
 
 First, clone this repo.
 
-Then, to use the demo app, you must first build the smart wallet contract from the `/contracts` folder of the passkey kit project, that can be found [here](https://github.com/Soneso/SwiftPasskeyKit/contracts):
+Then, to use the demo app, you must first build the smart wallet contract from the `/contracts` folder of the passkey kit project, that can be found [here](https://github.com/Soneso/SwiftPasskeyKit/tree/main/contracts):
 
 ```shell
 cd contracts

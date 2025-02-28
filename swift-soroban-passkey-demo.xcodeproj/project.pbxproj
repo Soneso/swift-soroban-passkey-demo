@@ -3,7 +3,7 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 60;
+	objectVersion = 56;
 	objects = {
 
 /* Begin PBXBuildFile section */
@@ -21,6 +21,7 @@
 		83A3A4592D71FBF200F22F43 /* SwiftPasskeyKit in Frameworks */ = {isa = PBXBuildFile; productRef = 83A3A4582D71FBF200F22F43 /* SwiftPasskeyKit */; };
 		83A3A45C2D71FFD100F22F43 /* LICENSE in Resources */ = {isa = PBXBuildFile; fileRef = 83A3A45A2D71FFD100F22F43 /* LICENSE */; };
 		83A3A45D2D71FFD100F22F43 /* README.md in Resources */ = {isa = PBXBuildFile; fileRef = 83A3A45B2D71FFD100F22F43 /* README.md */; };
+		83A3A4632D720AC500F22F43 /* SwiftPasskeyKit in Frameworks */ = {isa = PBXBuildFile; productRef = 83A3A4622D720AC500F22F43 /* SwiftPasskeyKit */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -47,6 +48,7 @@
 			files = (
 				83A3A4562D6F552800F22F43 /* AlertToast in Frameworks */,
 				83A3A4592D71FBF200F22F43 /* SwiftPasskeyKit in Frameworks */,
+				83A3A4632D720AC500F22F43 /* SwiftPasskeyKit in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -116,6 +118,7 @@
 			packageProductDependencies = (
 				83A3A4552D6F552800F22F43 /* AlertToast */,
 				83A3A4582D71FBF200F22F43 /* SwiftPasskeyKit */,
+				83A3A4622D720AC500F22F43 /* SwiftPasskeyKit */,
 			);
 			productName = "swift-soroban-passkey-demo";
 			productReference = 8309E3132D68AA4B00C480B7 /* swift-soroban-passkey-demo.app */;
@@ -147,7 +150,7 @@
 			mainGroup = 8309E30A2D68AA4B00C480B7;
 			packageReferences = (
 				83A3A4542D6F552800F22F43 /* XCRemoteSwiftPackageReference "AlertToast" */,
-				83A3A4572D71FBF200F22F43 /* XCLocalSwiftPackageReference "../SwiftPasskeyKit" */,
+				83A3A4612D720AC500F22F43 /* XCRemoteSwiftPackageReference "SwiftPasskeyKit" */,
 			);
 			productRefGroup = 8309E3142D68AA4B00C480B7 /* Products */;
 			projectDirPath = "";
@@ -399,13 +402,6 @@
 		};
 /* End XCConfigurationList section */
 
-/* Begin XCLocalSwiftPackageReference section */
-		83A3A4572D71FBF200F22F43 /* XCLocalSwiftPackageReference "../SwiftPasskeyKit" */ = {
-			isa = XCLocalSwiftPackageReference;
-			relativePath = ../SwiftPasskeyKit;
-		};
-/* End XCLocalSwiftPackageReference section */
-
 /* Begin XCRemoteSwiftPackageReference section */
 		83A3A4542D6F552800F22F43 /* XCRemoteSwiftPackageReference "AlertToast" */ = {
 			isa = XCRemoteSwiftPackageReference;
@@ -413,6 +409,14 @@
 			requirement = {
 				branch = master;
 				kind = branch;
+			};
+		};
+		83A3A4612D720AC500F22F43 /* XCRemoteSwiftPackageReference "SwiftPasskeyKit" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/Soneso/SwiftPasskeyKit";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 0.0.1;
 			};
 		};
 /* End XCRemoteSwiftPackageReference section */
@@ -425,6 +429,11 @@
 		};
 		83A3A4582D71FBF200F22F43 /* SwiftPasskeyKit */ = {
 			isa = XCSwiftPackageProductDependency;
+			productName = SwiftPasskeyKit;
+		};
+		83A3A4622D720AC500F22F43 /* SwiftPasskeyKit */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 83A3A4612D720AC500F22F43 /* XCRemoteSwiftPackageReference "SwiftPasskeyKit" */;
 			productName = SwiftPasskeyKit;
 		};
 /* End XCSwiftPackageProductDependency section */

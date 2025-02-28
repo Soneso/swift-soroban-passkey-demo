@@ -1,5 +1,5 @@
 {
-  "originHash" : "7d3f61cb4aff3511b269d588a65a4c657ab7960029d6579313796bcaaee935f4",
+  "originHash" : "104a704cf6af18d2cd5f1133c1a928d074d5ccf23f41f7fbc432d1447898758e",
   "pins" : [
     {
       "identity" : "alerttoast",
@@ -17,6 +17,15 @@
       "state" : {
         "revision" : "86ef8784537302f2229faf52ec01761f6aa59168",
         "version" : "3.0.6"
+      }
+    },
+    {
+      "identity" : "swiftpasskeykit",
+      "kind" : "remoteSourceControl",
+      "location" : "https://github.com/Soneso/SwiftPasskeyKit",
+      "state" : {
+        "revision" : "4e72c879ae3f2f579e287e3f4d8b17a407ea6fa1",
+        "version" : "0.0.1"
       }
     }
   ],
